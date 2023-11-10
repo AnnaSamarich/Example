@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page2</title>
+
+</head>
+
+<body>
+    <div class="top">
+        <p><a href="../main_page/index.html"><b>TAIKAN</b></a></p>
+    </div>
+    <div class="container">
+        <form>
+            <h4>Fill the form to get first free training:</h4>
+            <div>
+                <label>
+                    <span>First name:</span>
+                    <input type="text" id="first_name" name="userName" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Last name:</span>
+                    <input type="text" id="last_name" name="userlastName" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Birthday:</span>
+                    <input type="date" name="birthday" id="userBirthday">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Email:</span>
+                    <input type="email" id="email" name="userEmail" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>phone:</span>
+                    <input type="number" id="number" name="number" placeholder="+380*********">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Gender:</span>
+                    <input type="text" name="gender" id="userGender" list="genderSuggestions" />
+                    <datalist id="genderSuggestions">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </datalist>
+                </label>
+            </div>
+            <div>
+                <button type="submit">Get training</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

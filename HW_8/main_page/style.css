@@ -1,0 +1,168 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+}
+
+.container .img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.container .img:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.container .img:nth-child(2n+1) {
+    grid-row-start: span 2;
+}
+
+.container .img:nth-child(4n+6) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+
+.container .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    filter: brightness(0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .img img:hover {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+
+@media screen and (min-width : 480px) and (max-width : 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        display: block;
+        max-width: 320px;
+    }
+
+    .container .img {
+        display: block;
+        margin: 2% 0;
+    }
+
+    .container .img img {
+        filter: brightness(1) grayscale(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+    text-transform: capitalize;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+ul {
+    list-style: square;
+
+}
+
+.list {
+    margin: 2px;
+    font-size: large;
+
+}
+
+h3 {
+    margin: 20px;
+    padding: 5px;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.ct img {
+    width: 30px;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    background-color: rgb(200, 200, 200);
+}
+
+.header img {
+    width: 80px;
+}
+
+.top {
+    color: black;
+    font-size: large;
+    text-align: left;
+    display: flex;
+    padding-left: 90px;
+    background-size: 80px;
+}
+
+.board {
+    color: black;
+    font-size: large;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+}
+
+a {
+    padding: 10px;
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.list,
+.adress {
+    background-color: rgb(200, 200, 200);
+    width: 300px;
+}

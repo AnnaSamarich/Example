@@ -1,0 +1,88 @@
+body {
+    background-image: url(../images/6.jpeg);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top {
+    color: black;
+    font-size: large;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 90px;
+    background-image: url(../images/grey.jpeg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 80px;
+    background-color: rgb(200, 200, 200);
+}
+
+a {
+    padding: 10px;
+    color: black;
+    font-size: larger;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 24px;
+    text-align: left;
+
+}
+
+form {
+    width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(133, 133, 133, .5);
+    padding: 20px;
+}
+
+input {
+    font: 1em Times, serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+input:focus {
+    outline: none;
+    padding: 5px 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+div {
+    padding: 2px;
+}
+
+label span {
+    color: black;
+    text-transform: capitalize;
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+button[type="submit"] {
+    width: 120px;
+    height: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 150px;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"]:active {
+    background-color: rgb(200, 200, 200);
+}
